@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
 	cout << "value of pvalue : " << *pvalue << endl; 
 
 	delete pvalue; //使用delete运算符释放pvalue占用的内存
-
+	pvalue = NULL; //防止其成为野指针
 
 /*数组的动态内存分配*/
 	//一维数组
@@ -36,7 +36,7 @@ int main(int argc, char const *argv[])
 	delete pvalue; 
 		//以上两者均可(原因: 分配简单数据类型(int/char/long/int*/struct..)内存时，
 		//					内存大小已确定，系统可记忆并进行管理)
-
+	pvalue = NULL; 
 	//二维数组
 	char **array; //3*4
 	array = new int *[3]; 
@@ -46,7 +46,7 @@ int main(int argc, char const *argv[])
 	for (int i=0; i<3; i++)
 		delete [] array[i]; 
 	delete [] array; 
-
+	array = NULL; 
 
 /*对象的动态内存分配*/
 	class TEST
@@ -62,6 +62,6 @@ int main(int argc, char const *argv[])
 	TEST* array = new TEST[5]; 
 
 	delete [] TEST; 
-
+	TEST = NULL;
 	return 0;
 }
