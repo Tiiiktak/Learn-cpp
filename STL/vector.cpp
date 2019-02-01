@@ -85,7 +85,7 @@ int main(int argc, char const *argv[])
 	c.popback(); //删除最后一个元素
 	c.rbegin(); //反向迭代器，返回倒数第一个
 	c.rend(); //反向迭代器，返回倒数最后一个
-	c.resize(num); //重新指定长度，若增长补0
+	c.resize(n, value); //重新指定长度为n，若不够补为value
 	c.reserve(); //要求 容器 重新分配内存
 	operator[]; //返回容器中指定位置的一个引用。
 	
