@@ -8,6 +8,7 @@
 using namespace std; 
 
 //BFS
+//通过队列存储实现
 vector<int> E[110]; //存图
 bool vis[110]; //记录已经走过的点
 
@@ -36,6 +37,7 @@ void bfs(int root, int n)	//n个点的图，从root开始搜索
 }
 
 //DFS
+//通过递归实现
 vector<int> E[110]; //存图
 bool vis[110]; 
 void dfs(int start) //从start点开始搜索
