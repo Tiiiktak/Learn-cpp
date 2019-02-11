@@ -82,7 +82,7 @@ int main(int argc, char const *argv[])
 	c.end(); //指向最后一个元素的下一位，非当前最后一个元素
 	c.back(); //返回最后一个数据，不检查是否存在
 	c.max_size(); //返回最大容积
-	c.popback(); //删除最后一个元素
+	c.pop_back(); //删除最后一个元素
 	c.rbegin(); //反向迭代器，返回倒数第一个
 	c.rend(); //反向迭代器，返回倒数最后一个
 	c.resize(n, value); //重新指定长度为n，若不够补为value
