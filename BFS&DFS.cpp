@@ -24,7 +24,7 @@ void bfs(int root, int n)	//n个点的图，从root开始搜索
 		int u = que.front(); //取队头元素
 		que.pop(); //删队头
 
-		int len = que.size(); 
+		int len = E[u].size(); 
 		for (int i = 0; i < len; ++i) //遍历u点的邻接点
 		{
 			if (vis[E[u][i]]==0) //如点未访问过

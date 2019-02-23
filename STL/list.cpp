@@ -92,7 +92,7 @@ int main(int argc, char const *argv[])
 	void splice (iterator position, list& x, iterator i); //将x中i指向的元素移到position指向的位置，之后i为invalid
 	void splice (iterator position, list& x, iterator first, iterator last); //将x中[first,last)的元素移到list中，从当前position开始
 	//remove(删除特定值)
-	void remove(const value_type& val); //从list删除所有值为val的元素
+	void remove(const value_type& val); //从list删除所有值为val的元素(并不是真的"删除",只是将要删除的元素移位)
 	//remove_if(按条件删除)
 	void remove_if(Predicate pred); //pred可以是函数，也可是class
 	list<int> mylist6 (test, test+5); //{15, 36, 7, 17, 20, 39, 4, 1} 

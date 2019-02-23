@@ -76,7 +76,6 @@ int main(int argc, char const *argv[])
 
 /*成员函数*/
 	c.empty(); //是否为空
-	c.back(); //返回最后一个数据
 	c.capacity(); //容器当前能容纳元素个数 
 	c.clear(); //清除容器中所有元素
 	c.end(); //指向最后一个元素的下一位，非当前最后一个元素
